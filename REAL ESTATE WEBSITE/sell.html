@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="your website description here">
+        <title>Tinman Real-estate</title>
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sell.css">
+   
+    </head>
+    <body>
+        <header>
+            <nav id="desktop-navigation"> 
+
+                <div class="desktop-nav-logo">
+                    <h1>Tin Ly</h1>
+                    <p>Real Estate Agent</p>
+                </div>
+
+                <ul class="desktop-nav-container">
+                    <li><a href="index.html#desktop-section">Home</a></li>
+                    <li><a href="index.html#about-section">About</a></li>
+                    <li><a href="form.html">Buy</a></li>
+                    <li><a href="form.html">Sell</a></li>
+                    <li><a href="commercial.html">Commercial</a></li>
+                    <li><a href="index.html#footer">Contact Me</a></li>
+                </ul>
+            </nav>
+
+
+            <nav>
+                
+            </nav>
+
+        </header>
+
+        <main>
+
+           <section id="hero-section">
+
+                <div class="hero-heading">
+                    <h2>Realty<span>ONE</span>Group</h2>
+          
+                    <div class="hero-socmed">
+                        <img src="./assets/square-facebook-brands-solid-full (1).svg" alt="Facbook Social Media Icon Link">
+                        <img src="./assets/square-instagram-brands-solid-full (1).svg" alt="Youtube Icon Social Media Icon Link">
+                        <img src="./assets/youtube-brands-solid-full.svg" alt="Instagram Social Media Icon Link">
+                    </div>
+                    <div class="hero-contact-info">
+                    <h3>Free Consultation</h3>
+                    <p>Call 702-338-7769</p>
+                    </div>
+                </div>
+
+
+                    <div class="hero-section">
+                        <div class="hero-title">
+                            <h1>Sell Your Next Home</h1>
+                            <p>Do it with an expert</p>
+                        </div>
+                    </div>
+           </section>
+          <section id="form-section">
+                    <div class="form-container">
+                        <div class="form-title">
+                            <h2>FILL IN THE FORM BELOW<br>
+                            AND WE’LL GET BACK TO YOU</h2>
+                        </div>
+                        <div class="input-container">
+                            <form action="https://formspree.io/f/mvgvedwk" method="POST" id="clientSellForm">
+                                <div class="name-input">
+                                    <input type="text" name="firstName" placeholder="First Name" required>
+                                    <input type="text" name="lastName" placeholder="Last Name" required>
+                                </div>
+                                <div class="contact-info">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                    <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{7,15}" required>
+                                </div>
+                                <div class="address-input">
+                                    <input type="text" name="address" placeholder="Address" maxlength="100" required>
+                                    <input type="text" name="city" placeholder="City" maxlength="50" required>
+                                </div>
+                                <div class="state-input">
+                                    <input type="text" name="state" placeholder="State" required>
+                                    <input type="text" name="zip" placeholder="Zip" pattern="[0-9]{5}(-[0-9]{4})?" required>
+                                </div>
+                                    
+                                <label>
+                                    <input type="checkbox" id="consentCheckbox" required>
+                                <span>
+                                    By checking this box, you consent to receive SMS from Real Estate Agent Tin Lee 
+                                    in accordance with our Privacy Policy and Terms & Conditions.
+                                </span>
+                                </label>
+
+                                <!--Hidden Fields-->
+
+                                <input type="hidden" name="_subject" value="New Client Inquiry from Website">
+                                <input type="hidden" name="_captcha" value="false">
+
+                                <!--Submit Button-->
+                                <button type="submit" class="submit-btn">Submit</button>
+
+                                <p id="form-status"></p>
+
+                            </form>
+                        </div>
+                    </div>
+                    </section>
+
+                <section id="contact-btn-section">
+                    <div class="background-mask">
+                        <div class="btn-container">
+                            <h1>CONTACT ME TODAY</h1>
+                            <h2>FREE CONSULTATION</h2>
+                            <button id="js-contactBtn" class="contact-btn">Contact</button>
+                        </div>
+                    </div>
+                </section>
+
+
+            </main>
+        
+        <footer id="footer">
+         <div class="footer-nav">
+            <div class="footer-logo">
+                <h2>Tin Ly</h2>
+                <p>Real Estate Agent</p>
+            </div>
+            <div class="footer-nav-links">
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about-section">About</a></li>
+                    <li><a href="form.html">Buy</a></li>
+                    <li><a href="form.html">Sell</a></li>
+                    <li><a href="commercial.html">Commercial</a></li>
+                </ul>
+            </div>
+            <div class="footer-icon">
+                <img src="./assets/square-facebook-brands-solid-full (1).svg">
+                <img src="./assets/square-instagram-brands-solid-full (1).svg">
+                <img src="./assets/youtube-brands-solid-full.svg">
+            </div>
+         </div>
+    
+        </footer>
+        
+
+        <script src="script.js" defer></script>
+        </body>
+ 
+            </html> 
