@@ -1,0 +1,453 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, header {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Desktop Navigation Section*/ 
+
+.desktop-nav-container li {
+    list-style: none;
+}
+
+#desktop-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    background-color: rgb(17, 47, 108);
+    color: rgb(219, 191, 36);
+
+}
+
+.desktop-nav-container {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.desktop-nav-container li a {
+    padding: 0 2rem;
+    text-decoration: none;
+    color: rgb(219, 191, 36);
+}
+
+.desktop-nav-logo {
+    text-align: center;
+}
+
+/*HAMBURGER NAVIGATION*/
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;    
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 220%;
+    right: -79%;
+   border-bottom-left-radius: 10px;
+    background-color: rgba(18, 51, 116, 0.8);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menu-links a:hover {
+    color: rgb(219, 191, 36);
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+    opacity: 1;
+}
+
+
+/*--Hero Heading--*/
+
+.hero-heading {
+    height: 11vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(18, 51, 116, 0.8);
+
+}
+
+.hero-heading h2 {
+    font-size: 3rem;
+}
+
+.hero-contact-info {
+    text-align: center;
+    padding: 0.8rem;
+    height: auto;
+    width: 18rem;
+    border-radius: 5px;
+    background-color: rgb(219, 191, 36);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-contact-info:hover {
+    border: 1px solid white;
+    background-color: rgba(219, 191, 36, 0.5);
+    color: rgb(219, 191, 36);
+      box-shadow: 0 0 20px rgba(200, 155, 60, 0.8), 
+              0 0 40px rgba(200, 155, 60, 0.6), 
+              0 0 60px rgba(200, 155, 60, 0.4);
+  transform: translateY(-2px); 
+}
+
+
+.hero-contact-info h3 {
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.hero-heading span {
+    color: rgb(219, 191, 36);
+    font-size: 3rem;
+}
+
+.hero-socmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.hero-socmed img {
+    cursor: pointer;
+    height: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.hero-socmed img:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+/*HERO-BG-SECTION*/
+
+#hero-section {
+    background-image: url('./assets/sellimg.jpg');
+    height: 91vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section {
+    height: 20vh;
+}
+
+.hero-title {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    color: white;
+    text-shadow: 1px 1px 1px black, 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.hero-title h1 {
+    letter-spacing: 0.5rem;
+}
+
+.hero-title p {
+    letter-spacing: 0.3rem;
+    font-size: 2.2rem;
+}
+
+
+/*FORM SECTION*/
+#form-section {
+    margin: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    width: 80%;
+    height: 65%;
+    background-color: rgb(17, 47, 108);
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.form-title {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.name-input,
+.contact-info,
+.state-input {
+    gap: 1rem;
+    width: 90%;
+    display: flex;
+    border-radius: 5px;  
+
+}
+
+.address-input {
+    gap: 2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form input {
+    height: 2.8rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.input-container {
+    width: 100%;
+}
+
+label input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 3.5rem;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+}
+
+form button {
+    height: 3rem;
+    width: 8rem;
+    background-color: rgba(18, 51, 116, 0.8);
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 0.1rem;
+    border-radius: 5px;
+} 
+
+form button:hover {
+    background-color: rgb(11, 30, 68);
+    color: white;
+}
+
+
+/*Footer Section*/
+
+
+
+.footer-nav{
+    height: 10vh;
+    width: auto;
+    background-color: rgb(17, 47, 108);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:  rgb(219, 191, 36);
+}
+
+.footer-logo {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.footer-nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+
+.footer-nav-links ul li a {
+     color: rgb(219, 191, 36);
+     text-decoration: none;
+     transition: all 0.3s ease;
+     display: inline-block;
+}
+
+.footer-nav-links ul li a:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-icon img {
+    height: 3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-icon img:hover{
+    transform: translateY(-5px);
+}
+
+
+
+#developer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: rgba(18, 51, 116, 0.9);
+}
+
+.color-blue-variant {
+    color: rgb(19, 204, 204);
+}
+
+
+
+
+
+/*COTACT BUTTON SECTION*/
+
+#contact-btn-section {
+    height: 50vh;
+    background-image: url('./assets/aboutimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-mask {
+    background-color: rgba(18, 51, 116, 0.9);
+    height: 100%;
+}
+
+.btn-container {
+    font-size: 1.7rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+.contact-btn {
+    height: 3rem;
+    width: 30%;
+    color: white;
+    background-color: rgb(219, 191, 36);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: rgba(219, 191, 36, 0);
+    color: rgb(219, 191, 36);
+    border: 1px solid white;
+}

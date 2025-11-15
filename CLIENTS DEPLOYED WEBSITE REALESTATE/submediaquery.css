@@ -1,0 +1,277 @@
+
+/* Large → Medium (max 1280px) */
+@media (max-width: 1280px) {
+   
+    /*HERO SECTION*/
+
+    #desktop-navigation {
+        padding: 1rem 2rem;
+    }
+
+    /*FORM SECTION*/
+
+    #form-section {
+        margin: 4rem 3rem;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+
+}
+
+/* Medium → Tablet (max 1024px) */
+@media (max-width: 1024px) {
+    
+    /*HEADER SECTION - NAVIGATION SECTION*/
+
+    #desktop-navigation {
+        padding: 1rem 4rem;
+    }
+
+    .desktop-nav-logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .desktop-nav-container li a {
+        font-size: 1rem;
+    }
+
+    /*HERO HEADING*/
+
+    .hero-heading h2,
+    .hero-heading span {
+        font-size: 2.5rem;
+    }
+
+    .hero-socmed {
+        display: none;
+    }
+
+    /*FORM SECTION*/ 
+
+    #form-section {
+        margin: 3rem;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+   
+
+    /*FOOTER SECTION*/
+
+    .footer-icon img {
+        height: 2.3rem;
+    }
+
+    .footer-nav-links ul li a {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* Mid - Tablet → Phone (max 970px) */
+@media (max-width: 970px) {
+
+     /*HAMBURGER NAVIGATION*/
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        background-color: rgb(17, 47, 108);
+        color: rgb(219, 191, 36);
+    }
+
+    .hamburger-nav-logo  {
+        font-size: 0.9rem;
+        text-align: center;
+       
+    }
+
+    .hamburger-icon span{
+       background-color: rgb(219, 191, 36);
+    }
+
+    
+    /*HEADER - NAVIGATION SECTION*/
+
+    #desktop-navigation {
+       display: none;
+    }
+
+    /*FOOTER SECTION*/
+
+    .footer-icon {
+        display: none;
+    }
+
+
+}
+
+
+
+/* Tablet → Phone (max 768px) */
+@media (max-width: 768px) {
+
+    /*HEADER NAVIGATION SECTION*/
+
+    .hero-heading h2,
+    .her0-socmed {
+        display: none;
+
+    }
+
+    .desktop-nav-container {
+        display: none;
+    }
+
+    /*HEADER - HERO SECTION*/
+
+    .hero-title {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero-title h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-title p {
+        font-size: 2.2rem;
+    }
+
+    /*HERO-TITLE-SUB-QUERY*/
+
+        @media (max-width: 565px) {
+        
+                .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero-title p {
+        font-size: 2rem;
+    }
+
+        }
+
+      #form-section {
+        margin: 0.5rem;
+      }
+
+      .form-container {
+        border-radius: 5px;
+      }
+
+      label {
+        padding: 0 2rem;
+        
+      }
+
+      .name-input,
+      .contact-info,
+      .state-input {
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      /*CONTACT SECTION*/
+
+      .btn-container h1 {
+        font-size: 2.5rem;
+      }
+
+      .btn-container h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+
+
+    /*FOOTER SECTION*/
+
+    .footer-nav {
+        display: none;
+    }
+
+    #developer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+
+  
+}
+
+/* Small phones (max 480px) */
+@media (max-width: 480px) {
+
+
+    /*HEADER - HERO SECTION*/
+
+    .hero-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-title p {
+        font-size: 2rem;
+        padding-top: 2rem;
+        color: rgb(255, 252, 252);
+    }
+
+
+    .hero-title h1,
+    .hero-title p {
+        text-align: center;
+        letter-spacing: 0.4rem;
+    }
+
+    /*FORM SECTION*/ 
+
+    .name-input,
+    .contact-info,
+    .address-input,
+    .state-input {
+        width: 100%;
+    }
+    
+    label {
+        padding: 0.5rem 0;
+    }
+
+    .form-title h2 {
+        font-size: 1.3rem;
+    }
+
+    /*CONTACT SECTION*/
+
+       .btn-container h1 {
+        font-size: 2rem;
+      }
+
+      .btn-container h2 {
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+      }
+
+      .contact-btn {
+        font-size: 1rem;        
+      }
+
+    /*FOOTER SECTION*/
+
+    #developer {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+   
+
+}
